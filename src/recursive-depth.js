@@ -19,6 +19,8 @@ class DepthCalculator {
     for (let item of arr.length) {
       if (Array.isArray(arr[item])) {
         count++;
+      } else if (arr.length === 0) {
+        count++;
       }
     }
 
